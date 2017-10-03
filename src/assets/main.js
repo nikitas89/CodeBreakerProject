@@ -5,8 +5,6 @@ function guess() {
     let input = document.getElementById('user-guess');
     //add functionality to guess function here
     answer||attempt?"":setHiddenFields()
-    
-
 }
 
 //implement new functions here
@@ -18,7 +16,7 @@ var answerStr = answer.value.toString()
 // console.log('len ', answerStr.length);
 while (answerStr.length<4) {
   answerStr = "0"+answerStr
-  attempt=0
+  attempt.value="0"
 }
   console.log('answerStr ',answerStr);
 //non working switch code
@@ -42,8 +40,8 @@ while (answerStr.length<4) {
 }
 
 function setMessage(text){
-  var $message = document.getElementById('message')
-  $message.innerHTML(text)
+  var message = document.getElementById('message')
+  message.innerHTML(text)
 
 }
 
