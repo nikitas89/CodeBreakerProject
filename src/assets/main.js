@@ -40,8 +40,8 @@ while (answerStr.length<4) {
 }
 
 function setMessage(text){
-  var message = document.getElementById('message')
-  message.innerHTML(text)
+  // var message = document.getElementById('message')
+  document.getElementById('message').innerHTML = text
 
 }
 
